@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta de CEP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Consultar CEP</h1>
+  <div class="form-group">
+    <label for="cep">Cep:</label>
+    <input type="text" id="cep" maxlength="9" placeholder="01001-000">
+    <button onclick="consultarCep()">Pesquisar Cep</button>
+  </div>
+
+  <table id="resultado" class="hidden">
+    <thead>
+    <tr>
+      <th>CEP</th>
+      <th>Logradouro</th>
+      <th>Bairro</th>
+      <th>Cidade</th>
+      <th>Estado</th>
+      <th>Ibge</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td id="cepResp"></td>
+      <td id="logradouro"></td>
+      <td id="bairro"></td>
+      <td id="localidade"></td>
+      <td id="uf"></td>
+      <td id="ibge"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
